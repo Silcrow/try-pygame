@@ -2,6 +2,8 @@ import sys
 import pygame
 from settings import SCREEN_DIMENSIONS, FONT_SIZE, WIDTH, HEIGHT
 from game_objects import Player, Wall, Hazard, Pellet
+import warnings
+warnings.filterwarnings("ignore", message="pkg_resources is deprecated as an API.", category=UserWarning)
 
 # Initialize Pygame
 pygame.init()
